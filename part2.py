@@ -75,7 +75,6 @@ def compute():
     centers=5
     random_state=12
     x,label = datasets.make_blobs(n_samples=n_samples, centers=centers,center_box=center_box, random_state=random_state)
-    #dct['bvv']=[bvv[0],bvv[1]]
     cord_1=x[0:,0:1]
     cord_2=x[0:,1:]
 
@@ -100,7 +99,7 @@ def compute():
     plt.plot(np.array(sse_vs_k)[:,1])
     plt.savefig("part2Question3.png")
 
-    dct = answers["2C: SSE plot"] =sse_vs_k#[[0.0, 100.0]]
+    dct = answers["2C: SSE plot"] =sse_vs_k
 
 
     """

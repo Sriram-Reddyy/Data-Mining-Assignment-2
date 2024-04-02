@@ -58,8 +58,8 @@ def compute():
     B.	Create a linkage matrix Z, and plot a dendrogram using the scipy.hierarchy.linkage and scipy.hierachy.dendrogram functions, with “single” linkage.
     """
     Z = linkage(data['X'], 'single')
-    # fig = plt.figure(figsize=(25, 10))
     dn = dendrogram(Z)
+    # fig = plt.figure(figsize=(25, 10))
     # plt.savefig('part3_questionA.png')
 
     # Answer: NDArray
